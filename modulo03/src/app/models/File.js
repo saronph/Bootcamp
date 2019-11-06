@@ -7,6 +7,13 @@ class File extends Model {
         // insere colunas
         name: Sequelize.STRING,
         path: Sequelize.STRING,
+        url: {
+          // cria o avatar virtual
+          type: Sequelize.VIRTUAL,
+          get() {
+            return `http://localhost:3333/files/${this.path}`;
+          },
+        },
       },
       {
         sequelize,

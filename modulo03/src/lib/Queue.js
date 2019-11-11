@@ -35,8 +35,14 @@ class Queue {
       // pega bee e handle da fila relacionado com o job
       const { bee, handle } = this.queues[job.key];
 
-      bee.process(handle);
+      // add verificação de erro com 'on'
+      bee.on('failed', this.handleFailure).process(handle);
     });
+  }
+
+  // método para identificar o erro
+  handleFailure(job, err) {
+    console.log(`Queue ${job.queue.name}: FAILED`, err);
   }
 }
 

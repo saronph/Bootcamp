@@ -1,11 +1,11 @@
 // dados para envio de email, usado foi Mailtrap(para dev), online precisa outro(amazon ses)
 export default {
-  host: 'smtp.mailtrap.io',
-  port: '2525',
+  host: process.env.MAIL_HOST,
+  port: process.env.MAIL_PORT,
   secure: false,
   auth: {
-    user: 'dca36e8db3bda1',
-    pass: '183ab3baa8be7f',
+    user: process.env.MAIL_USER,
+    pass: process.env.MAIL_PASS,
   },
   default: {
     from: 'Equipe GoBarber <noreply@gobarber.com>',

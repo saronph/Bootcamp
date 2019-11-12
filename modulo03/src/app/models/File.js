@@ -11,7 +11,7 @@ class File extends Model {
           // cria o avatar virtual
           type: Sequelize.VIRTUAL,
           get() {
-            return `http://localhost:3333/files/${this.path}`;
+            return `${process.env.APP_URL}/files/${this.path}`;
           },
         },
       },

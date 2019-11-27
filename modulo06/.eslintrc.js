@@ -5,12 +5,12 @@ module.exports = {
   extends: [
     'airbnb',
     'prettier',
-    'prettier/react'
+    'prettier/react',
   ],
   globals: {
-    __DEV__: 'readonly',
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
+    __DEV__: 'readonly',
   },
   parser: 'babel-eslint',
   parserOptions: {
@@ -22,14 +22,10 @@ module.exports = {
   },
   plugins: [
     'react',
-    'prettier'
+    'prettier',
   ],
   rules: {
     'prettier/prettier': 'error',
-    'react/state-in-constructor': 'off',
-    'react/static-property-placement': 'off',
-    'no-console': 'off',
-    'react/jsx-props-no-spreading': 'off',
     'react/jsx-filename-extension': [
       'warn',
       {

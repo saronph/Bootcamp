@@ -51,6 +51,14 @@ buck-out/
 */fastlane/report.xml
 */fastlane/Preview.html
 */fastlane/screenshots
+
+# Bundle artifact
+*.jsbundle
+
+
+# CocoaPods
+/ios/Pods/
+
 .vscode
 android
 ios
@@ -61,9 +69,3 @@ __tests__
 .watchmanconfig
 app.json
 metro.config.js
-
-# Bundle artifact
-*.jsbundle
-
-# CocoaPods
-/ios/Pods/

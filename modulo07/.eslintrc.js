@@ -26,6 +26,9 @@ module.exports = {
     'react',
   ],
   rules: {
+    'react/jsx-one-expression-per-line': 'off',
+    'arrow-parens': 'off',
+    'react/state-in-constructor': 'off',
     'prettier/prettier': 'error',
     'react/jsx-filename-extension': [
       'warn',

@@ -4,10 +4,9 @@ module.exports = {
     es6: true,
   },
   extends: [
+    'airbnb',
     'prettier',
     'prettier/react',
-    'plugin:react/recommended',
-    'airbnb',
   ],
   globals: {
     Atomics: 'readonly',
@@ -26,6 +25,7 @@ module.exports = {
     'react',
   ],
   rules: {
+    'no-param-reassign': 'off',
     'react/jsx-one-expression-per-line': 'off',
     'arrow-parens': 'off',
     'react/state-in-constructor': 'off',
@@ -36,6 +36,7 @@ module.exports = {
         extensions: ['.jsx', '.js']
       }
     ],
-    'import/prefer-default-export': 'off'
+    'import/prefer-default-export': 'off',
+    'no-console': ["error", {allow: ["tron"]}]
   },
 };

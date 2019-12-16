@@ -27,7 +27,7 @@ class User extends Model {
   }
 
   static associate(models) {
-    // add id do arquivo no model de usuário e realaciona com a tabela que irá armazenar
+    // add id do arquivo no model de usuário e relaciona com a tabela que irá armazenar
     this.belongsTo(models.File, { foreignKey: 'avatar_id', as: 'avatar' });
   }
 

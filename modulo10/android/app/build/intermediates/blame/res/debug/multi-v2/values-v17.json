@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/usuario/Bootcamp/modulo10/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v17/values-v17.xml",
+            "outputFile": "/home/usuario/Bootcamp-master/modulo10/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v17/values-v17.xml",
             "map": [
                 {
-                    "source": "/home/usuario/.gradle/caches/transforms-2/files-2.1/0780281429b73a69dbccbf52b4f2c4ba/res/values-v17/values-v17.xml",
+                    "source": "/home/usuario/.gradle/caches/transforms-2/files-2.1/95de238bb7d8d78cddf5fb87df474bbe/res/values-v17/values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,25,29,33,37,40,43,46,50,53,57",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

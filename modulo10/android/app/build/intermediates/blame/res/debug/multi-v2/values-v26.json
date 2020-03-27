@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/usuario/Bootcamp-master/modulo10/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v26/values-v26.xml",
+            "outputFile": "/home/usuario/Bootcamp/modulo10/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v26/values-v26.xml",
             "map": [
                 {
                     "source": "/home/usuario/.gradle/caches/transforms-2/files-2.1/95de238bb7d8d78cddf5fb87df474bbe/res/values-v26/values-v26.xml",

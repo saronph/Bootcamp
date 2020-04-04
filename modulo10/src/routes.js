@@ -1,6 +1,8 @@
 import React from 'react';
 import {TouchableOpacity} from 'react-native';
 
+import {useNavigation} from '@react-navigation/native';
+
 import {createStackNavigator} from '@react-navigation/stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
@@ -22,6 +24,8 @@ const Stack = createStackNavigator();
 const Tabs = createBottomTabNavigator();
 
 function NewStack() {
+  const navigation = useNavigation();
+
   return (
     <Stack.Navigator
       screenOptions={{
@@ -36,7 +40,7 @@ function NewStack() {
         component={SelectProvider}
         options={{
           title: 'Selecione o prestador',
-          headerLeft: ({navigation}) => (
+          headerLeft: () => (
             <TouchableOpacity
               onPress={() => {
                 navigation.navigate('Dashboard');
@@ -51,10 +55,10 @@ function NewStack() {
         component={SelectDateTime}
         options={{
           title: 'Selecione o horário',
-          headerLeft: ({navigation}) => (
+          headerLeft: () => (
             <TouchableOpacity
               onPress={() => {
-                navigation.goBack();
+                navigation.navigate('SelectProvider');
               }}>
               <Icon name="chevron-left" size={20} color="#FFF" />
             </TouchableOpacity>
@@ -68,8 +72,8 @@ function NewStack() {
           title: 'Confirmar agendamento',
           headerLeft: () => (
             <TouchableOpacity
-              onPress={({navigation}) => {
-                navigation.goBack();
+              onPress={() => {
+                navigation.navigate('SelectDateTime');
               }}>
               <Icon name="chevron-left" size={20} color="#FFF" />
             </TouchableOpacity>
